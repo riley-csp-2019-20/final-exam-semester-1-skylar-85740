@@ -28,30 +28,39 @@ import turtle as trtl
 sketch = trtl.Turtle()
 
 #movement functions
-if ():
-    sketch.left(1)
-elif():
-    sketch.right(1)
-elif():
-    sketch.up(1)
-elif():
-    sketch.down(1)
+def up():
+    sketch.setheading(90)
+    sketch.forward(10)
 
+def down():
+    sketch.setheading(270)
+    sketch.forward(10)    
 
+def right():
+    sketch.setheading(0)
+    sketch.forward(10)
 
+def left():
+    sketch.setheading(180)
+    sketch.forward(10)
 
 #color/drawing functions
-sketch.pensize()
+
+sketch.pensize(1)
+
 sketch.turtlesize(1)
 sketch.color()
 
 #create screen
+wn = trtl.Screen()
 
 #bind to keypresses
-
-
+wn.onkeypress(up, "Up")
+wn.onkeypress(down, "Down")
+wn.onkeypress(right, "Right")
+wn.onkeypress(left, "Left")
 #listen
+wn.listen()
 
-wn = trtl.Screen()
 wn.mainloop()
 #mainloop
