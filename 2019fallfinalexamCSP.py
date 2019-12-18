@@ -45,12 +45,10 @@ def left():
     sketch.forward(10)
 
 #color/drawing functions
-
-sketch.pensize(1)
-
-sketch.turtlesize(1)
-sketch.color()
-
+def o():
+    sketch.pensize(1)
+def p():
+    sketch.pensize(2)
 #create screen
 wn = trtl.Screen()
 
@@ -59,6 +57,9 @@ wn.onkeypress(up, "Up")
 wn.onkeypress(down, "Down")
 wn.onkeypress(right, "Right")
 wn.onkeypress(left, "Left")
+wn.onkeypress(sketch.pensize(1), "o")
+wn.onkeypress(sketch.pensize(2), "p")
+
 #listen
 wn.listen()
 
