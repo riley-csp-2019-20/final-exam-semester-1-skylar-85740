@@ -28,7 +28,14 @@ import turtle as trtl
 sketch = trtl.Turtle()
 
 #movement functions
-
+if ():
+    sketch.left(1)
+elif():
+    sketch.right(1)
+elif():
+    sketch.up(1)
+elif():
+    sketch.down(1)
 
 
 
