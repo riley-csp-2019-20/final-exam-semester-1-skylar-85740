@@ -47,6 +47,8 @@ def left():
 def space():
     sketch.clear()
 
+def u():
+    
 
 #color/drawing functions
 def o():
